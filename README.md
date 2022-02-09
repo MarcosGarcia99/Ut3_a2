@@ -1,103 +1,111 @@
-# Ut3_a2
+1. ¿Qué niveles OSI son los niveles de soporte de red? 
 
-1 ¿Qué niveles OSI son los niveles de soporte de red? 
+Capa 3, Capa 4
 
-La capa 3 es la que proporciona la conectividad de red
+2. ¿Qué niveles OSI son los niveles de soporte de usuario? 
 
-2 ¿Qué niveles OSI son los niveles de soporte de usuario? 
+sesion, presentacion y aplicacion
 
-La capa 7 que es la que es la mas cercana a el y la que le permite usar aplicaciones
+3. ¿Cómo están OSI e ISO relacionadas entre sí? 
 
-3 ¿Cómo están OSI e ISO relacionadas entre sí? 
+OSI interconecta los sistemas y ISO estandariza las conexiones
 
-Ambas proporcionan modelos de interconexión entre redes
+4. Enumere los niveles del modelo OSI. 
 
-4 Enumere los niveles del modelo OSI. 
+Capa 7: capa de aplicación
 
-Capa 1: Capa Física
-Capa 2: Capa de enlace de datos
-Capa 3: Capa de red
-Capa 4: Capa de transporte
-Capa 5: Capa de sesión
-Capa 6: Capa de presentación
-Capa 7: Capa de aplicación
+Capa 6: capa de presentación
 
-5 ¿Cómo pasa la información de un nivel OSI al siguiente? 
+Capa 5: capa de sesión
 
-Cada capa del protocolo le pasa datos a la siguiente capa y esta le añade datos propios de control y luego pasa el conjunto a la siguiente capa.
+Capa 4: capa de transporte
 
-6 ¿Qué son las cabeceras y cola y cómo se añaden y se quitan? 
+Capa 3: capa de red
 
-La capa de enlace de datos proporciona tránsito de datos confiable a través de un enlace físico. Al hacerlo, la capa se ocupa del direccionamiento físico, la topología de red, el acceso a la red, la notificación de errores, entrega ordenada de tramas y control de flujo.
+Capa 2: capa de enlace de datos
 
-7 ¿Cuáles son las responsabilidades del nivel físico?
+Capa 1: capa física
 
-El nivel físico proporciona los medios mecánicos, eléctricos, funcionales y procedimentales para activar, mantener y desactivar conexiones físicas para la transmisión de bits entre entidades de enlace de datos.
+5. ¿Cómo pasa la información de un nivel OSI al siguiente? 
 
-8 Definir las especificaciones electricas, mecanica, de procedimiento, y funcionalidades para activar, mantener y desactivar enlaces fisicos
+Cuando el proceso emisor desea enviar datos al proceso receptor, entrega los datos a la capa de aplicación, donde se añade la cabecera de aplicación en la parte delantera de los datos, que se entrega a la capa de presentación, y de esta manera se prosigue hasta la capa física.
 
-9 ¿Cuáles son las responsabilidades del nivel de enlace? 
+6. ¿Qué son las cabeceras y cola y cómo se añaden y se quitan? 
 
-Proporcionar un transito de datos confiable a traves de un enlace fisico
+Las cabeceras y colas son datos de control que se añaden al principio y final de un paquete de datos cuando se mandan, son eliminadas cuando se recibe el paquete de datos
 
-10 ¿Cuáles son las responsabilidades del nivel de red? 
+7. ¿Cuáles son las responsabilidades del nivel físico? 
 
-Dar conectividad y seleccion de ruta entre dos sistemas de host ubicados enredes geograficamentes distintas
+definir las especicaciones electricas, mecanicas, de procedimiento y funciones para activar, mantener y desactivar un enlace
 
-11 ¿Cuáles son las responsabilidades del nivel de transporte? 
+8. ¿Cuáles son las responsabilidades del nivel de enlace? 
 
-Intenta suministrar un servicio de transporte de datos dando confiabilidad de transporte entre dos hosts
+Proporcionar el tránsito de datos de forma confiable a través de un enlace físico
 
-12 El nivel de transporte crea una conexión entre el origen y el destino. ¿Cuáles son los tres eventos involucrados en la conexión?
+9. ¿Cuáles son las responsabilidades del nivel de red? 
 
-Emisor, flujo de red y receptor
+Proporcionar conectividad y selección de ruta entre dos sistemas de hosts que pueden estar ubicados en redes geográficamente distintas.
 
-13 ¿Cuál es la diferencia entre una dirección de punto en servicio, una dirección lógica y una dirección fisica? 
+10. ¿Cuáles son las responsabilidades del nivel de transporte? 
 
+Suministrar un servicio de transporte de datos que aísla las capas superiores de los detalles de implementación del transporte. Específicamente, temas como la confiabilidad del transporte entre dos hosts es responsabilidad de la capa de transporte.
 
+11. El nivel de transporte crea una conexión entre el origen y el destino. 
+¿Cuáles son los tres eventos involucrados en la conexión?
 
-14 ¿Cuáles son las responsabilidades del nivel de sesión? 
+dos hosts, circuitos virtuales y deteccion de errores
 
-Establecimiento de la sesión y creación de un buzón donde se recibirán mensajes procedentes de las capas inferiores. intercambio de datos entre los buzones del emisor y el receptor
+12. ¿Cuál es la diferencia entre una dirección de punto en servicio, una dirección lógica y una dirección fisica? 
 
-15 ¿Cuáles son las responsabilidades del nivel de presentación? 
+direccion de punto de servivio:
 
-Las funciones básicas del nivel de presentación son: Coordinar los códigos de representación de la información alfanumérica, compresión de los datos.
+direccion logica:
 
-16 ¿Cuál es el objetivo de la traducción en el nivel de presentación? 
+direccion fisica
 
-Encriptar la información para garantizar la privacidad.
+13. ¿Cuáles son las responsabilidades del nivel de sesión? 
 
-17 Indique alguno de los servicios proporcionados por el nivel de aplicación. 
+Proporciona sus servicios a la capa de presentación. También sincroniza el diálogo
+entre las capas de presentación de los dos hosts y administra su intercambio de datos. Además de regular la sesión, la capa de sesión ofrece disposiciones para una eficiente transferencia de datos.
 
-DNS (Domain Name Service)
-DHCP (Dynamic Host Configuration Protocol)
-FTP (File Transfer Protocol)
+14. ¿Cuáles son las responsabilidades del nivel de presentación? 
 
-18 ¿Cómo se relacionan los niveles de la familia del protocolo TCP/IP con los niveles del modelo OSI?
+Garantiza que la información que envía la capa de aplicación de un sistema pueda ser leída por la capa de aplicación de otro.
 
-19 El nivel transporte decide la localización de los puntos de sincronización. 
+15. ¿Cuál es el objetivo de la traducción en el nivel de presentación? 
+
+Dar un formato común que pueda ser leida por otras aplicaciones
+
+16. Indique alguno de los servicios proporcionados por el nivel de aplicación. 
+
+Hojas de calculo, procesamiento de texto, terminales bancarias...
+
+17. ¿Cómo se relacionan los niveles de la familia del protocolo TCP/IP con los niveles del modelo OSI?
+
+TCP/IP combinan las funciones de las capas de presentación y de sesión solamente por medio de la capa de aplicación, así como también capas de enlace de datos y la capa física del modelo OSI en una sola capa, con la presentación de menores capas además de su mejor adaptación a los protocolos.
+
+18. El nivel sesión decide la localización de los puntos de sincronización. 
 
 transporte
 sesión
 presentación
 aplicación
 
-20 En el nivel red, la unidad de datos se denomina trama.
+19. En el nivel red, la unidad de datos se denomina trama.
 
 físico
 enlace de datos
 red
 transporte
 
-21 Los servicios de correo y de directorio están disponibles a los usuarios de la red a través del nivel: sesión
+20. Los servicios de correo y de directorio están disponibles a los usuarios de la red a través del nivel: enlace de datos
 
 enlace de datos
 sesión
 transporte
 aplicación
 
-22 A medida que los paquetes de datos se mueven  de los niveles inferiores a los superiores las cabeceras: recolocadas
+21. A medida que los paquetes de datos se mueven  de los niveles inferiores a los superiores las cabeceras: son añadidas
 
 añadidas
 eliminadas
